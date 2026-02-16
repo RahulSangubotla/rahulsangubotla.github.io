@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&display=swap');
+
+@import "tailwindcss";
+
+:root {
+  --bg-dark: #020617; /* Slate 950 */
+}
+
+body {
+  background-color: var(--bg-dark);
+  font-family: 'Fira Code', monospace; /* The "Terminal" Font */
+  color: #e2e8f0;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar for that IDE feel */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2dd4bf; /* Teal hover */
+}
+
+.blink {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% { opacity: 0; }
+}
